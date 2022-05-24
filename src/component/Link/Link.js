@@ -1,12 +1,12 @@
 import React from 'react';
 
 const Link = (props) => {
-    const {name}= props.route;
+    const {name, link}= props.route;
     return (
       
-        <div>
-            <li>{name}</li>
-        </div>
+        <nav className='mr-10'>
+           <a href={link}>{name}</a>
+        </nav>
     );
 };
 
